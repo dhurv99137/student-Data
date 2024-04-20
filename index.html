@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result Table Data</title>
+</head>
+<style>
+    form {
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f4f4f4;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .form__input {
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px;
+        font-size: 16px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #0056b3;
+    }
+
+    * Table */ table {
+        width: 100%;
+        border-collapse: collapse;
+        border: 1px solid #ddd;
+        font-family: Arial, sans-serif;
+    }
+
+    th {
+        background-color: #f2f2f2;
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+
+    td {
+        border: 1px solid #ddd;
+        padding: 8px;
+    }
+
+    tbody tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    tbody tr:hover {
+        background-color: #ddd;
+    }
+
+    .update-btn,
+    .delete-btn {
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        padding: 8px 16px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 14px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 4px;
+    }
+
+    .delete-btn {
+        background-color: #f44336;
+    }
+</style>
+
+<body>
+    <div class="row" style="text-align: center;">
+        <h2>Student Data</h2>
+    </div>
+    <form id="Student_Data">
+        <input type="text" name="name" id="name" class="form__input" placeholder="Enter Name">
+        <input type="number" name="roll_no" id="roll_no" class="form__input" placeholder="Enter Roll No">
+        <input type="number" name="science" id="science" class="form__input" placeholder="Enter Science Subject Marks">
+        <input type="number" name="english" id="english" class="form__input" placeholder="Enter English Subject Marks">
+        <input type="number" name="maths" id="maths" class="form__input" placeholder="Enter Math Subject Marks">
+        <input type="submit">
+    </form>
+
+    <table>
+        <thead>
+            <tr>
+                <th scope="col">SR No</th>
+                <th scope="col">Name</th>
+                <th scope="col">Roll No</th>
+                <th scope="col">Science</th>
+                <th scope="col">English</th>
+                <th scope="col">Math</th>
+                <th scope="col">Total</th>
+                <th scope="col">Result</th>
+                <th scope="col">Update</th>
+                <th scope="col">Delete</th>
+            </tr>
+        </thead>
+        <tbody id="Data-in-Ui"></tbody>
+    </table>
+
+    <script src="js/Result.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+{
+  "result": [
+    {
+      "id": "1edc",
+      "name": "hello",
+      "roll_no": "12",
+      "science": "65",
+      "english": "21",
+      "maths": "48"
+    },
+    {
+      "id": "5d0d",
+      "name": "Gucci",
+      "roll_no": "84",
+      "science": "42",
+      "english": "11",
+      "maths": "45"
+    },
+    {
+      "id": "fed6",
+      "name": "dhruv",
+      "roll_no": "42",
+      "science": "85",
+      "english": "90",
+      "maths": "74"
+    }
+  ]
+}
